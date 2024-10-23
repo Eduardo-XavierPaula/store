@@ -6,15 +6,20 @@ export default function Footer() {
 	return (
 		<footer className="bg-muted mt-12 py-8">
 			<div className="container mx-auto px-4">
-				<div className="flex flex-wrap justify-between">
-					<div className="w-full md:w-1/4 mb-4 md:mb-0">
-						<h3 className="text-lg font-semibold mb-2">About Us</h3>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+					<div className="w-full mb-4 md:mb-0">
+						<h3 className="text-lg font-semibold mb-2">Sobre nós</h3>
 						<p className="text-sm">
-							FashionStore is your one-stop shop for trendy and affordable
-							clothing.
+							FakeFashionStore é uma loja de de demonstração com o intuito de
+							mostrar minhas habilidades como desenvolvedor Front-end,
+							utilizando Next.js como framework e consumindo a API publica de
+							<Link href={"https://fakestoreapi.com"} target="_blank">
+								Fake Store API
+							</Link>
+							.
 						</p>
 					</div>
-					<div className="w-full md:w-1/4 mb-4 md:mb-0">
+					<div className="w-full mb-4 md:mb-0">
 						<h3 className="text-lg font-semibold mb-2">Customer Service</h3>
 						<ul className="text-sm">
 							<li>
@@ -34,7 +39,7 @@ export default function Footer() {
 							</li>
 						</ul>
 					</div>
-					<div className="w-full md:w-1/4 mb-4 md:mb-0">
+					<div className="w-full mb-4 md:mb-0">
 						<h3 className="text-lg font-semibold mb-2">Connect With Us</h3>
 						<ul className="text-sm">
 							<li>
@@ -54,7 +59,7 @@ export default function Footer() {
 							</li>
 						</ul>
 					</div>
-					<div className="w-full md:w-1/4">
+					<div className="w-full">
 						<h3 className="text-lg font-semibold mb-2">Newsletter</h3>
 						<p className="text-sm mb-2">
 							Subscribe to get special offers and updates.
@@ -66,7 +71,7 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className="mt-8 text-center text-sm">
-					<p>&copy; 2023 FashionStore. All rights reserved.</p>
+					<p>&copy; 2023 Eduardo de Paula Xavier. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>

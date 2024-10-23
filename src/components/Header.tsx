@@ -8,7 +8,7 @@ export default function Header() {
 		<header className="border-b">
 			<div className="container mx-auto px-4 py-4 grid grid-cols-2 md:grid-cols-4 gap-4">
 				<Link href="/" className="text-2xl font-bold">
-					FashionStore
+					FakeFashionStore
 				</Link>
 				<nav className="hidden md:flex justify-center items-center col-span-2 space-x-4">
 					<Link href="/" className="text-foreground hover:text-primary">

@@ -22,6 +22,7 @@ export default function Hero() {
 							title="modelo"
 							fill={true}
 							className="rounded-lg shadow-lg object-cover"
+							priority
 						/>
 					</div>
 				</div>

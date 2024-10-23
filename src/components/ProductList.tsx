@@ -11,12 +11,13 @@ import {
 	CarouselNext,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-interface ProductListProps {
+import Link from "next/link";
+interface IProductListProps {
 	listTitle: string;
 	products: ProductResponse;
 }
 
-export default function ProductList(props: ProductListProps) {
+export default function ProductList(props: IProductListProps) {
 	return (
 		<section className="py-12">
 			<div className="container mx-auto px-4 relative">
@@ -49,17 +50,22 @@ export default function ProductList(props: ProductListProps) {
 													src={product.image}
 													alt={product.title}
 													fill={true}
-													className="object-contain"
+													className="object-contain p-1"
+													loading="lazy"
 												/>
 											</div>
 											<CardContent className="p-4">
-												<CardTitle>{product.title}</CardTitle>
-												<p className="text-primary font-bold">
+												<CardTitle className="min-h-8 line-clamp-2">
+													{product.title}
+												</CardTitle>
+												<p className="text-primary font-bold mt-4">
 													${product.price.toFixed(2)}
 												</p>
 											</CardContent>
-											<CardFooter className="p-4">
-												<Button className="w-full">Comprar</Button>
+											<CardFooter className="p-4 pt-0">
+												<Button className="w-full" asChild>
+													<Link href={"/product/" + product.id}>Comprar</Link>
+												</Button>
 											</CardFooter>
 										</Card>
 									</CarouselItem>
