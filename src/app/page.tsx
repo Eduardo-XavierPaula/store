@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
-import ProductList from "@/components/ProductList";
-import { ProductResponse } from "@/components/types/product-response";
+import ProductList from "@/components/product/ProductList";
+import { ProductResponse } from "@/types/product-response";
 import { getCategories, getCategory } from "@/services/productService";
 
 export default async function EcommercePage() {

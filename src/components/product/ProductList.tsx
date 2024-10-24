@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
-import { ProductResponse } from "./types/product-response";
+import { ProductResponse } from "../../types/product-response";
 import Image from "next/image";
 import {
 	Carousel,
@@ -64,7 +64,7 @@ export default function ProductList(props: IProductListProps) {
 											</CardContent>
 											<CardFooter className="p-4 pt-0">
 												<Button className="w-full" asChild>
-													<Link href={"/product/" + product.id}>Comprar</Link>
+													<Link href={"/produto/" + product.id}>Comprar</Link>
 												</Button>
 											</CardFooter>
 										</Card>

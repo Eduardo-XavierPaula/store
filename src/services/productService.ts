@@ -1,4 +1,4 @@
-import { ProductResponse } from "@/components/types/product-response";
+import { ProductResponse } from "@/types/product-response";
 import { IProduct } from "@/interface/product.interface";
 
 export async function getProducts(): Promise<ProductResponse> {

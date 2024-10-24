@@ -30,9 +30,14 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
-				<div className="min-h-screen bg-background">
+				<div className="min-h-screen bg-background relative">
+					<div className="bg-yellow-300 text-center sticky top-0 z-[9999]">
+						Esta não é uma loja Real
+					</div>
 					<Header />
-					<main>{children}</main>
+					<main className="min-h-[calc(100vh-393px)] flex flex-col">
+						{children}
+					</main>
 					<Footer />
 				</div>
 			</body>

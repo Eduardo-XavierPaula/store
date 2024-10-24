@@ -7,20 +7,20 @@ export default function Header() {
 	return (
 		<header className="border-b">
 			<div className="container mx-auto px-4 py-4 grid grid-cols-2 md:grid-cols-4 gap-4">
-				<Link href="/" className="text-2xl font-bold">
+				<Link href="/" className="text-2xl font-bold hidden md:block">
 					FakeFashionStore
+				</Link>
+				<Link href="/" className="text-2xl font-bold md:hidden">
+					FFS
 				</Link>
 				<nav className="hidden md:flex justify-center items-center col-span-2 space-x-4">
 					<Link href="/" className="text-foreground hover:text-primary">
 						Home
 					</Link>
-					<Link href="/products" className="text-foreground hover:text-primary">
-						Produtos
-					</Link>
-					<Link href="/about" className="text-foreground hover:text-primary">
+					<Link href="/sobre" className="text-foreground hover:text-primary">
 						Sobre
 					</Link>
-					<Link href="/contact" className="text-foreground hover:text-primary">
+					<Link href="/contato" className="text-foreground hover:text-primary">
 						Contato
 					</Link>
 				</nav>
