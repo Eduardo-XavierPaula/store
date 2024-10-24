@@ -115,10 +115,10 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 						</div>
 					</div>
 					<div className="flex flex-col sm:flex-row gap-4">
-						<Button className="flex-1" size="lg">
+						<Button className="flex-1 min-h-10" size="lg">
 							Comprar
 						</Button>
-						<Button variant="outline" className="flex-1" size="lg">
+						<Button variant="outline" className="flex-1 min-h-10" size="lg">
 							Adicionar a lista de desejos
 						</Button>
 					</div>
