@@ -57,9 +57,10 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 					<Image
 						src={product.image}
 						alt={product.title}
-						layout="fill"
-						objectFit="contain"
-						className="rounded-lg"
+						fill
+						className="rounded-lg object-contain"
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+						priority
 					/>
 				</div>
 				<div className="flex flex-col">

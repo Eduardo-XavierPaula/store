@@ -23,6 +23,7 @@ export default function Hero() {
 							fill={true}
 							className="rounded-lg shadow-lg object-cover"
 							priority
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						/>
 					</div>
 				</div>

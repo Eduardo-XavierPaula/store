@@ -21,7 +21,7 @@ export default function ProductList(props: IProductListProps) {
 	return (
 		<section className="py-12">
 			<div className="container mx-auto px-4 relative">
-				<h2 className="text-3xl font-bold mb-8">{props.listTitle}</h2>
+				<h2 className="text-3xl font-bold mb-8 pr-20">{props.listTitle}</h2>
 				<div className="flex w-full">
 					<Carousel
 						opts={{
@@ -52,6 +52,7 @@ export default function ProductList(props: IProductListProps) {
 													fill={true}
 													className="object-contain p-1"
 													loading="lazy"
+													sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 												/>
 											</div>
 											<CardContent className="p-4">
